@@ -29,6 +29,10 @@ const books = [
       title: 'Wuthering Heights',
       author: 'Emily Brontë',
     },
+    {
+        title: 'The Sun Also Rises',
+        author: 'Ernest Hemingway',
+    },
   ];
 
 // Resolvers define the technique for fetching the types defined in the
