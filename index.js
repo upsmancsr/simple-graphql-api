@@ -29,6 +29,10 @@ const books = [
       title: 'Wuthering Heights',
       author: 'Emily Brontë',
     },
+    {
+        title: 'The Sun Also Rises',
+        author: 'Ernest Hemingway',
+    },
   ];
 
 // Resolvers define the technique for fetching the types defined in the
@@ -39,11 +43,9 @@ const resolvers = {
     },
   };
   
-// The ApolloServer constructor requires two parameters: your schema
-// definition and your set of resolvers.
+// The ApolloServer constructor requires two parameters: your schema definition and set of resolvers
 const server = new ApolloServer({ typeDefs, resolvers });
 
-// The `listen` method launches a web server.
 server.listen().then(({ url }) => {
   console.log(`Server is listening at ${url}`);
 });
